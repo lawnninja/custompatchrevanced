@@ -102,6 +102,12 @@ build_apk() {
 		-o $output_apk_name \
 		-b $patches_filename \
 		-m $integrations_filename"
+		-e sponsorblock
+		-i return-youtube-dislike
+		-i hide-get-premium
+		-i amoled
+		-e swipe-controls
+		-e old-quality-layout
     if [ "$1" ] && [ ! "$additional_args" = "" ]; then
         # root with $additional_args
         $base_cmd \
