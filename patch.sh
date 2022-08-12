@@ -107,7 +107,7 @@ build_apk() {
 		-i hide-get-premium
 		-i amoled
 		-e swipe-controls
-		-e old-quality-layout
+		-i old-quality-layout
     if [ "$1" ] && [ ! "$additional_args" = "" ]; then
         # root with $additional_args
         $base_cmd \
